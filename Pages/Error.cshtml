@@ -1,0 +1,17 @@
+@page
+@model SRKFruitsWeb.Pages.ErrorModel
+@{
+    ViewData["Title"] = "Something Went Wrong";
+}
+
+<section class="section error-section">
+    <div class="container center">
+        <h1>Oops &mdash; something went wrong.</h1>
+        <p>Please try again, or call us directly at <a href="tel:+919840073951">+91 98400 73951</a>.</p>
+        @if (Model.ShowRequestId)
+        {
+            <p class="muted">Request ID: <code>@Model.RequestId</code></p>
+        }
+        <a asp-page="/Index" class="btn btn-primary">Back to Home</a>
+    </div>
+</section>

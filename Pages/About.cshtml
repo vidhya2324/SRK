@@ -1,0 +1,102 @@
+@page
+@model SRKFruitsWeb.Pages.AboutModel
+@{
+    ViewData["Title"] = "About Us";
+}
+
+<section class="page-hero">
+    <div class="container">
+        <p class="eyebrow reveal-up">About SRK Fruits</p>
+        <h1 class="reveal-up delay-1">Three Decades of Trust, Grown One Harvest at a Time</h1>
+    </div>
+</section>
+
+<section class="section">
+    <div class="container">
+        <p class="eyebrow center reveal-up">Our Journey</p>
+        <h2 class="center reveal-up">From a Local Trading Business to a Trusted Name</h2>
+
+        <div class="timeline">
+            <div class="timeline-line" aria-hidden="true"></div>
+
+            <div class="timeline-item reveal-left">
+                <div class="timeline-dot"></div>
+                <div class="timeline-card">
+                    <span class="timeline-year">1995</span>
+                    <p>Founded as a fruit trading business by Mr. Sivaramakrishnan.</p>
+                </div>
+            </div>
+
+            <div class="timeline-item reveal-right">
+                <div class="timeline-dot"></div>
+                <div class="timeline-card">
+                    <span class="timeline-year">2000s</span>
+                    <p>Expansion into wholesale distribution across Chennai.</p>
+                </div>
+            </div>
+
+            <div class="timeline-item reveal-left">
+                <div class="timeline-dot"></div>
+                <div class="timeline-card">
+                    <span class="timeline-year">2010</span>
+                    <p>Entry into exotic and imported fruit segments.</p>
+                </div>
+            </div>
+
+            <div class="timeline-item reveal-right">
+                <div class="timeline-dot"></div>
+                <div class="timeline-card">
+                    <span class="timeline-year">Present</span>
+                    <p>Supplying premium fruits to leading retail chains and wholesale partners.</p>
+                </div>
+            </div>
+        </div>
+
+        <p class="timeline-note center reveal-up">
+            Our journey reflects steady growth driven by experience, market knowledge, and commitment to quality.
+        </p>
+    </div>
+</section>
+
+<section class="section leadership-section">
+    <div class="container">
+        <p class="eyebrow center reveal-up">Leadership</p>
+        <h2 class="center reveal-up">The People Behind SRK Fruits</h2>
+
+        <div class="leader-grid">
+            <div class="leader-card reveal-up">
+                <div class="leader-avatar">SK</div>
+                <h3>Mr. Sivaramakrishnan</h3>
+                <span class="leader-role">Managing Director &middot; MBA, LL.B</span>
+                <p>
+                    The driving force behind SRK Fruits India, Mr. Sivaramakrishnan brings three decades
+                    of mastery in the fruit import and sourcing sector. Known for his deep industry insights
+                    and enduring supplier relationships, he bridges traditional market wisdom with modern
+                    business strategy &mdash; ensuring credibility and quality remain the backbone of every
+                    partnership SRK Fruits builds.
+                </p>
+            </div>
+
+            <div class="leader-card reveal-up delay-1">
+                <div class="leader-avatar">BS</div>
+                <h3>Mr. Bala Sreemanikandan</h3>
+                <span class="leader-role">Chief Operating Officer &middot; B.Tech, Mechanical Engineering</span>
+                <p>
+                    A results-oriented leader dedicated to the growth and operational excellence of SRK Fruits India.
+                    Drawing on his experience as an Application Consultant at Propelis, Bala has integrated
+                    sophisticated corporate frameworks into the company's traditional operations &mdash; leading
+                    the charge in optimizing supply chain efficiency, managing key supplier relationships, and
+                    identifying new market opportunities to expand the brand's national footprint.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section cta-section">
+    <div class="container cta-inner reveal-up">
+        <h2>Want to know more about how we source?</h2>
+        <p>See the standards and process behind every crate that leaves Anna Fruit Market.</p>
+        <a asp-page="/Quality" class="btn btn-primary">See Our Quality Standards</a>
+    </div>
+</section>

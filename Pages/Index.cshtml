@@ -1,0 +1,124 @@
+@page
+@model SRKFruitsWeb.Pages.IndexModel
+@{
+    ViewData["Title"] = "Home";
+}
+
+<section class="hero">
+    <div class="hero-bg" aria-hidden="true">
+        <span class="drift drift-1">&#127826;</span>
+        <span class="drift drift-2">&#127815;</span>
+        <span class="drift drift-3">&#129381;</span>
+        <span class="drift drift-4">&#127818;</span>
+        <span class="drift drift-5">&#127821;</span>
+    </div>
+    <div class="container hero-inner">
+        <p class="eyebrow reveal-up">Anna Fruit Market &middot; Koyambedu &middot; Chennai</p>
+        <h1 class="reveal-up delay-1">Delivering Freshness <br /><span class="text-gold">quality since 1995.</span></h1>
+        <p class="hero-lead reveal-up delay-2">
+            SRK Fruits India Private Limited bridges the gap between global orchards and local markets &mdash;
+            supplying premium exotic and seasonal fruits to Chennai's leading retailers and wholesalers.
+        </p>
+        <div class="hero-actions reveal-up delay-3">
+            <a asp-page="/Products" class="btn btn-primary">Explore Our Products</a>
+            <a asp-page="/Contact" class="btn btn-ghost">Talk to Us</a>
+        </div>
+    </div>
+    <div class="hero-wave" aria-hidden="true">
+        <svg viewBox="0 0 1200 90" preserveAspectRatio="none">
+            <path d="M0,50 C150,100 350,0 600,45 C850,90 1050,10 1200,50 L1200,100 L0,100 Z" fill="var(--color-cream)"></path>
+        </svg>
+    </div>
+</section>
+
+<section class="stat-strip reveal-up">
+    <div class="container stat-grid">
+        <div class="stat">
+            <span class="stat-num" data-count="30">0</span><span class="stat-suffix">+</span>
+            <p>Years of Excellence</p>
+        </div>
+        <div class="stat">
+            <span class="stat-num" data-count="15">0</span><span class="stat-suffix">+</span>
+            <p>Fruit Varieties Sourced</p>
+        </div>
+        <div class="stat">
+            <span class="stat-num" data-count="4">0</span><span class="stat-suffix">+</span>
+            <p>Leading Retail Partners</p>
+        </div>
+        <div class="stat">
+            <span class="stat-num" data-count="100">0</span><span class="stat-suffix">%</span>
+            <p>FSSAI Compliant Sourcing</p>
+        </div>
+    </div>
+</section>
+
+<section class="section overview">
+    <div class="container overview-grid">
+        <div class="overview-media reveal-left">
+            <div class="media-frame">
+                <div class="media-badge spin-slow">
+                    <span>SINCE 1995</span>
+                </div>
+            </div>
+        </div>
+        <div class="overview-copy reveal-right">
+            <p class="eyebrow">Company Overview</p>
+            <h2>Bringing the World's Best Harvest to Chennai</h2>
+            <p>
+                SRK Fruits is a premier name in the Indian fruit trading industry, boasting over
+                30 years of excellence. Based in the iconic Anna Fruit Market, Koyambedu &mdash;
+                one of Asia's largest perishable goods hubs &mdash; we bridge the gap between
+                global orchards and local markets.
+            </p>
+            <ul class="check-list">
+                <li><strong>Decades of Experience:</strong> Established in 1995, with deep-rooted market knowledge and a reliable supply chain.</li>
+                <li><strong>Exotic Specialization:</strong> Sourcing and distributing high-quality exotic fruits alongside local seasonal favourites.</li>
+                <li><strong>Strategic Location:</strong> Positioned at the pulse of trade in Koyambedu for rapid distribution and maximum freshness.</li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+<section class="section mv-section">
+    <div class="container mv-grid">
+        <div class="mv-card reveal-up">
+            <div >
+                <img src="~/images/srk_logo.png" alt="SRK Fruits India" class="brand-logo" />
+            </div>
+            <h3>Our Mission</h3>
+            <p>To deliver premium quality fruits through responsible sourcing, hygienic handling, and reliable distribution &mdash; while maintaining integrity in every transaction.</p>
+        </div>
+        <div class="mv-card reveal-up delay-1">
+            <div class="mv-icon">&#128161;</div>
+            <h3>Our Vision</h3>
+            <p>To be one of India's most trusted fruit importers and wholesale distributors, known for premium products, quality assurance, and professional trade practices.</p>
+        </div>
+    </div>
+</section>
+
+<section class="section partners-section">
+    <div class="container">
+        <p class="eyebrow center reveal-up">Our Esteemed Customers</p>
+        <h2 class="center reveal-up">Trusted by Chennai's Leading Retailers</h2>
+    </div>
+    <div class="marquee reveal-up">
+        <div class="marquee-track">
+            <span>Santhosh Super Market</span><span>&#8226;</span>
+            <span>KPN Fresh</span><span>&#8226;</span>
+            <span>SPAR Hypermarket</span><span>&#8226;</span>
+            <span>Wholesalers &amp; Distributors Nationwide</span><span>&#8226;</span>
+            <span>Reliance Retail</span><span>&#8226;</span>
+            <span>LULU Mall</span><span>&#8226;</span>
+            <span>SPAR Hypermarket</span><span>&#8226;</span>
+            <span>Wholesalers &amp; Distributors Nationwide</span><span>&#8226;</span>
+        </div>
+    </div>
+</section>
+
+<section class="section cta-section">
+    <div class="container cta-inner reveal-up">
+        <h2>Looking for a reliable fruit supply partner?</h2>
+        <p>From exotic imports to seasonal favourites &mdash; graded, hygienically handled and FSSAI compliant.</p>
+        <a asp-page="/Contact" class="btn btn-primary">Get in Touch</a>
+    </div>
+</section>

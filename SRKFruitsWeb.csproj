@@ -1,0 +1,17 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <RootNamespace>SRKFruitsWeb</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <!-- Optional: uncomment if you want to send the Contact form via MailKit
+         instead of the built-in System.Net.Mail client used in Contact.cshtml.cs
+    <PackageReference Include="MailKit" Version="4.7.1.1" />
+    -->
+  </ItemGroup>
+
+</Project>

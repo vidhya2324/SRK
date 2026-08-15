@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>@ViewData["Title"] | SRK Fruits India</title>
+    <meta name="description" content="SRK Fruits India Private Limited — premium exotic and seasonal fruit wholesaler based in Anna Fruit Market, Koyambedu, Chennai. Purely fresh since 1995." />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;0,9..144,700;1,9..144,500&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+</head>
+<body>
+
+    <!-- Page load curtain: two leaf-green panels part to reveal the site -->
+    <div class="page-curtain" id="pageCurtain" aria-hidden="true">
+        <div class="curtain-panel curtain-left"></div>
+        <div class="curtain-panel curtain-right"></div>
+        <div class="curtain-mark">
+          
+            <img src="~/images/srk_logo.png" alt="SRK Fruits India" class="brand-logo" />
+            <span>SRK FRUITS</span>
+        </div>
+    </div>
+
+    <header class="site-header" id="siteHeader">
+        <div class="container header-inner">
+            <a class="brand" href="/">
+                <img src="~/images/srk_logo.png" alt="SRK Fruits India" class="brand-logo" />
+               
+                <span class="brand-text">
+                    <span class="brand-name">SRK <em>Fruits</em></span>
+                    <span class="brand-tag">Purely Fresh</span>
+                </span>
+            </a>
+
+            <nav class="main-nav" id="mainNav">
+                <a asp-page="/Index">Home</a>
+                <a asp-page="/About" >About</a>
+                <a asp-page="/Products">Products</a>
+                <a asp-page="/Quality">Quality</a>
+                <a asp-page="/Contact" class="nav-cta">Contact Us</a>
+            </nav>
+
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="mainNav">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </header>
+
+    <main>
+        @RenderBody()
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-wave">
+            <svg viewBox="0 0 1200 80" preserveAspectRatio="none" aria-hidden="true">
+                <path d="M0,40 C200,90 400,0 600,40 C800,80 1000,10 1200,40 L1200,0 L0,0 Z" fill="var(--color-cream)"></path>
+            </svg>
+        </div>
+        <div class="container footer-inner">
+            <div class="footer-col footer-brand">
+                <div class="brand footer-brand-mark">
+                    <span class="brand-crown">&#9813;</span>
+                    <span class="brand-text">
+                        <span class="brand-name">SRK <em>Fruits</em></span>
+                        <span class="brand-tag">Purely Fresh · Since 1995</span>
+                    </span>
+                </div>
+                <p>Bringing the world's best harvest to Chennai — premium exotic and seasonal fruits, ethically sourced and hygienically delivered.</p>
+            </div>
+
+            <div class="footer-col">
+                <h4>Explore</h4>
+                <ul>
+                    <li><a asp-page="/About">Our Journey</a></li>
+                    <li><a asp-page="/Products">Products</a></li>
+                    <li><a asp-page="/Quality">Quality Standards</a></li>
+                    <li><a asp-page="/Contact">Contact Us</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h4>Visit Us</h4>
+                <ul class="footer-contact">
+                    <li>Shop No. TD 32, Anna Fruit Market,<br />Koyambedu, Chennai &ndash; 600017, Tamil Nadu</li>
+                    <li><a href="tel:+9184387 42508">+91 84387 42508</a></li>
+                    <li><a href="mailto:srk23463@gmail.com">srkfreshfruits@gmail.com</a></li>
+                    
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <span>&copy; @DateTime.Now.Year SRK Fruits India Private Limited. All rights reserved.</span>
+            </div>
+        </div>
+    </footer>
+
+    <a href="tel:+919840073951" class="floating-call" aria-label="Call SRK Fruits">
+        <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.8 19.8 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.8 19.8 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.12.9.34 1.78.66 2.62a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.46-1.27a2 2 0 0 1 2.11-.45c.84.32 1.72.54 2.62.66A2 2 0 0 1 22 16.92z"/></svg>
+    </a>
+
+    <script src="~/js/site.js" asp-append-version="true"></script>
+
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>
